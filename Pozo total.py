@@ -9,4 +9,4 @@ else:
         if a<=3:
             pozo_total = a * 5 
             print("el pozo a pagar es  : ",pozo_total)
-             
+            break 
