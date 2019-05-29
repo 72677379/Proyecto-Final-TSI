@@ -1,3 +1,6 @@
+#cada cartilla cuesta S/ 5 y cada 
+# jugador puede comprar hasta 3 cartillas. 
+
 cartillas = int(input("¿Cúantos cartillas desea comprar?"))
 
 if cartillas <= 3:
