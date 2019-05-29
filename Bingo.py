@@ -6,7 +6,7 @@ def entrada():
 cartilla = []
 def ball_aleat(n):
     for i in range(n):
-        cartilla.insert(i,random.randrange(1,81))
+        cartilla.insert(i,random.randrange(0,80))
     return cartilla
 
 entrada()
