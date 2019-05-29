@@ -1,14 +1,12 @@
 cartillas = int(input("¿Cúantos cartillas desea comprar?"))
 
-#for i in range(cartillas):
 if cartillas <= 3:
         pozo_total = cartillas * 5 
-        print(pozo_total)
+        print("el pozo a pagar es  : ",pozo_total)
 else:
     while cartillas > 3:
-        if cartillas <= 3:
-            pozo_total = cartillas * 5 
-            print(pozo_total)
-        else:
-            preguntador = int(input("Deme un número menor o igual a 3:"))
-            print(preguntador)
+        a=int(input("Ingrese un numero menor o igual a 3 : "))
+        if a<=3:
+            pozo_total = a * 5 
+            print("el pozo a pagar es  : ",pozo_total)
+             
