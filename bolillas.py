@@ -1,11 +1,13 @@
 import random
-def ball_aleat(n):
-    bolilla = []
-    b = 80
-    for i in range(n):
-        bolilla.insert(i,random.randrange(0,b-1))
-    return bolilla
-
-alea = ball_aleat(15)
-print(alea)
-
+L=[random.randint(80, 99)] #este es L[0]
+i=1
+while i<10:
+  x=random.randint(80,99)
+  for j in range(0, len(L)):
+    if L[j]==x:
+      break
+  else:
+    L.append(x)
+    i+=1
+print(L)
+print(sorted(L))
