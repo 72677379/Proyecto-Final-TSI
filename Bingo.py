@@ -1,16 +1,24 @@
-import random
+import random 
 def entrada():
-    n = int(input("¿Cuantos jugadores son? "))
+    n = int(input("¿Cuantos jugadores son?"))
     for x in range (1,n+1):
-        x = str(input("Ingrese su nombre: "))
-        x = str(input("Ingre su numero de cartilla: "))
-
-cartilla = []
-def ball_aleat(n):
-    for i in range(n):
-        cartilla.insert(i,random.randrange(0,80))
-    return cartilla
+        x =str(input("Ingrese su nombre: "))
+        x = str(input("Ingrese su numero de cartilla: "))
 
 entrada()
-aleatorios = ball_aleat(24)
-print(aleatorios)
+
+
+L=[random.randint(0, 15)]
+i=1
+while i<15:
+  x=random.randint(0,15)
+  for j in range(0, len(L)):
+    if L[j]==x:
+      break
+  else:
+    L.append(x)
+    i+=1
+print(L)
+
+
+
