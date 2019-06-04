@@ -4,7 +4,7 @@ def entrada():
     for x in range (1,n+1):
         x =str(input("Ingrese su nombre: "))
         x = str(input("Ingrese su numero de cartilla: "))
-
+ 
 entrada()
 
 
@@ -18,7 +18,7 @@ while i<15:
   else:
     L.append(x)
     i+=1
-print(L)
+print("Esta es tu cartilla", L)
 
 
 
