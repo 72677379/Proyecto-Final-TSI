@@ -1,5 +1,5 @@
 cartillas = int(input("¿Cúantos cartillas desea comprar?"))
-comprador = int(input("¿Cual es su nombre?"))
+comprador = str(input("¿Cual es su nombre?"))
 
 if cartillas <= 3:
         monto_persona = cartillas * 5 

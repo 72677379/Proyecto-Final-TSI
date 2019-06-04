@@ -1,12 +1,15 @@
-from  random import*
-def listaAleatorios(n):
-      lista = []
-      for i in range(n):
-          lista[i] = randint(1,80)
-      return lista
+import random   
+lista = []
+n = 0
+def sacar(n):
+    n += 1
+    for n in range(n):
+        lista.insert(n+1,random.randrange(0,80))
+        return lista
+    
 
-print("Ingrese cuantos numeros aleatorios desea obtener")
-n=int(input())
+alea = sacar(n)
 
-aleatorios=listaAleatorios(n)
-print(aleatorios)
+
+alea.append(alea)
+print(alea)
