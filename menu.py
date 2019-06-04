@@ -10,7 +10,7 @@ def imprimir():
     print(alea)
 
 while True:
-    print("\nBienvenido que desea hacer: ")
+    print("Bienvenido que desea hacer: ")
     print("Presione 1 si desea obtener un cartilla")
     print("Presione 2 si quiere que se muestre la cartilla")
     print("Presione 0 para salir")
