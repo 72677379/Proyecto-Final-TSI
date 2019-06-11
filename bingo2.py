@@ -20,13 +20,13 @@ def entrada():
                 i+=1
                 break
           print("Los números de su cartilla son: ", L)
-      elif cartillas > 3:
-        while True:
+      else:
+        while cartillas > 3:
             a=int(input("Ingrese un numero menor o igual a 3: "))
             if a<=3:
               monto_persona = a * 5 
               print("el pozo a pagar es: ",monto_persona)
-              for i in range(1,a + 1):
+              for z in range(1, a + 1): 	
                 L=[random.randint(0, 15)]
                 i=1
                 while i<15:
@@ -35,12 +35,10 @@ def entrada():
                     if L[j]==x:
                       break
                     else:
-                      L.append(x)
-                      i+=1
-                      break
-                print("Los números de su cartilla son:", L)
-              break
-                    
+                    	L.append(x)
+                    	i+=1
+                    	break
+                print("Los números de su cartilla son: ", L)
+              break 	        
                 
 entrada()
-

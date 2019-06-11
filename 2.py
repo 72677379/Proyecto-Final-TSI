@@ -1,4 +1,4 @@
-import random
+#import random
 L=[random.randint(0, 15)]
 i=1
 while i<15:
