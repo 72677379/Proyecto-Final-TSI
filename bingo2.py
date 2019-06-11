@@ -8,18 +8,10 @@ def entrada():
         monto_persona = cartillas * 5 
         print("el pozo a pagar es: ",monto_persona)
         for i in range(1,cartillas + 1):
-          L=[random.randint(0, 15)]
-          i=1
-          while i<15:
-            x=random.randint(0,15)
-            for j in range(0, len(L)):
-              if L[j]==x:
-                break
-              else:
-                L.append(x)
-                i+=1
-                break
-          print("Los números de su cartilla son: ", L)
+          miLista=list(range(1,80))  #creamos una lista del 1 al 80  
+          random.shuffle(miLista)     #desordenamos la lista  
+          
+          print("Los números de su cartilla son: ", miLista[:15])     #mostramos únicamente los 15 primeros  
       else:
         while cartillas > 3:
             a=int(input("Ingrese un numero menor o igual a 3: "))
@@ -27,18 +19,9 @@ def entrada():
               monto_persona = a * 5 
               print("el pozo a pagar es: ",monto_persona)
               for z in range(1, a + 1): 	
-                L=[random.randint(0, 15)]
-                i=1
-                while i<15:
-                  x=random.randint(0,15)
-                  for j in range(0, len(L)):
-                    if L[j]==x:
-                      break
-                    else:
-                    	L.append(x)
-                    	i+=1
-                    	break
-                print("Los números de su cartilla son: ", L)
+                miLista=list(range(1,80))  #creamos una lista del 1 al 80  
+                random.shuffle(miLista)     #desordenamos la lista           
+                print("Los números de su cartilla son: ", miLista[:15])     #mostramos únicamente los 15 primeros
               break 	        
                 
 entrada()
