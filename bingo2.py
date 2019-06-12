@@ -1,4 +1,7 @@
-import random 
+import random
+import sys
+import os
+import sys
 def entrada():
     jugadores = int(input("¿Cuantos jugadores son? "))
     suma =0
@@ -14,6 +17,7 @@ def entrada():
           random.shuffle(miLista)     #desordenamos la lista  
           
           print("Los números de su cartilla son: ", miLista[:15])     #mostramos únicamente los 15 primeros  
+        
       else:
         while cartillas > 3:
             a=int(input("Ingrese un numero menor o igual a 3: "))
@@ -28,3 +32,20 @@ def entrada():
               break 	        
     print("el poso total es : ",suma)            
 entrada()
+z=1
+bsjugar = []
+bjugadas = []
+for i in range(1,81):
+  bsjugar.append(i)
+while z == 1:
+    for n in range(1,16):
+      a=int(input("Si desea una bolilla presione (1):"))
+      #b=int(input("Si desea reiniciar su juego presione (2):"))
+      #c=int(input("Si desea salir del juego presione (3):"))
+      juego = random.choice(bsjugar)
+      bsjugar.remove(juego)
+      bjugadas.append(juego)
+      print("Bolilla:",juego)
+      print("Bolillas que han salido: ",bjugadas)
+      print()
+    break
