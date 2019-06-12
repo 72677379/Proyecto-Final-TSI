@@ -19,6 +19,4 @@ while z == 1:
         print("Bolillas que han salido: ",bjugadas)
         print()
     break
-
-
-
+    
