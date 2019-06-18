@@ -47,29 +47,32 @@ def sacar_bolillas():
         print("/*Presione (2) para regresar al menu de inicio*/")
         a = int(input())
         if(a == 9):
-          juego = random.choice(bsjugar)
+          juego = random.choice(bsjugar)  #Elección de un número de forma aleatoria
           bsjugar.remove(juego)
           bjugadas.append(juego)
           print("\n Bolilla: ",juego,"\n")
+          print("Las bolillas que han salido son:",bjugadas, "\n")
+            
         elif(a== 0):
           print("Las bolillas que han salido son:",bjugadas, "\n")
+          
         elif(a == 2): 
           return menu()
       break
-
+  print("Lamentablemente no hubo un ganador.", "\n")
 def menu():
   m = 1
   while (m != 0):
   
     print("1. Iniciar juego")
-    print("2. Reiniciar juego")
+    #print("2. Reiniciar juego")
     print("0. Salir")
     m = int(input()) 
     if (m == 1):
       entrada()
       sacar_bolillas()
-    elif(m == 2):
-      return entrada()
+    #elif(m == 2):
+      #return entrada()
     elif(m == 0):
       break
 menu()
