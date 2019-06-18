@@ -2,6 +2,7 @@ import random
 import sys
 import os
 import sys
+import time
 
 def entrada():
     jugadores = int(input("¿Cuantos jugadores son? "))
@@ -59,7 +60,10 @@ def sacar_bolillas():
         elif(a == 2): 
           return menu()
       break
+  print("Procesando...")    
+  time.sleep(6) 
   print("Lamentablemente no hubo un ganador.", "\n")
+  
 def menu():
   m = 1
   while (m != 0):
