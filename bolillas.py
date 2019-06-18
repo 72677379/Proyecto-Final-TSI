@@ -3,12 +3,13 @@ import sys
 import os
 import sys
 import time
-
+lista = []
 def entrada():
     jugadores = int(input("¿Cuantos jugadores son? "))
     suma =0
     for x in range (1,jugadores+1):
       comprador = (input("¿Cual es su nombre? "))
+      lista.append(comprador)
       cartillas = int(input("¿Cúantos cartillas desea comprar? "))
       if cartillas <= 3:
         monto_persona = cartillas * 5
